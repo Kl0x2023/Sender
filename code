@@ -1,0 +1,7 @@
+from web3.auto import w3
+
+w3.eth.defaultAccount = w3.eth.accounts[0] #указываем аккаунт, с которого будем проводить транзакции
+
+#создаем сендер для goerli-сети
+goerli_provider = w3.providers.EthereumTesterProvider(
+    endpoint_uri='https://goerli.infura.io/v3/<your_api_key>')
