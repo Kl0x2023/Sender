@@ -5,3 +5,5 @@ w3.eth.defaultAccount = w3.eth.accounts[0] #указываем аккаунт, �
 #создаем сендер для goerli-сети
 goerli_provider = w3.providers.EthereumTesterProvider(
     endpoint_uri='https://goerli.infura.io/v3/<your_api_key>')
+#создаем запрос герли
+geth --goerli --rpc --rpcapi="eth,net,web3" --cache=1024
